@@ -42,3 +42,15 @@ Press `Shift-Insert` to paste in Git Bash.
 ----
 curl https://gitlab.com/lawrancej/COMP1000/raw/master/main.sh | bash
 ----
+
+== January 12
+
+Be sure to install the http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+
+. Open Eclipse
+. File -> New -> Project...
+. Java -> Java Project...
+. Enter Project name, Finish, and Open Java Perspective
+. File -> New -> Class
+. Enter Main for class name, and click Finish
+
