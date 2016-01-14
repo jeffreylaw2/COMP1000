@@ -1,5 +1,11 @@
 = COMP1000
 
+== Resources
+
+* https://sites.google.com/site/witcomp1000fall2015/lectures[CS1 Slides]
+* http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+* https://eclipse.org/downloads/[Eclipse downloads]
+
 == January 7
 
 === Introduce yourself
@@ -8,6 +14,8 @@ Welcome! Let's get to know each other with an icebreaker. Answer these questions
 * What is your name?
 * Why is Computer Science your major?
 * Tell us something nobody else in the room knows about you.
+
+https://sites.google.com/site/witcomp1000fall2015/lectures[More notes]
 
 == January 8
 
@@ -53,4 +61,6 @@ Be sure to install the http://www.oracle.com/technetwork/pt/java/javase/download
 . Enter Project name, Finish, and Open Java Perspective
 . File -> New -> Class
 . Enter Main for class name, and click Finish
+
+== January 14
 
