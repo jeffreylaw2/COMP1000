@@ -68,4 +68,36 @@ Introduction to Java
 
 == January 15
 
-Implement Mad Libs!
+Implement Mad Libs! Read in nouns, verbs, etc., and at the end, print out a silly story.
+
+Open up Terminal or Git Bash.
+
+----
+cd ~/COMP1000
+git pull upstream master
+----
+
+Open Eclipse
+
+. File -> Import...
+. General -> Existing Projects into Workspace...
+. Click Next
+. Click Browse...
+. Navigate to your home directory -> COMP1000 -> workspace
+. Click Open. You should see at the very least a project called Submissions.
+. Click Finish
+
+Next:
+
+. Right click on Submissions -> Team -> Remote -> Fetch from...
+. Select upstream and continue.
+
+Finally:
+
+. Right click on Subissions -> Team -> Merge
+. Select upstream/master
+. Click Merge
+
+You should now see `AnotherClass.java`
+
+=== Submission
