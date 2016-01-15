@@ -64,3 +64,8 @@ Be sure to install the http://www.oracle.com/technetwork/pt/java/javase/download
 
 == January 14
 
+Introduction to Java
+
+== January 15
+
+Implement Mad Libs!
