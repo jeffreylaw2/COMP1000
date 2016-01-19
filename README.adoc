@@ -101,3 +101,10 @@ Finally:
 You should now see `AnotherClass.java`
 
 === Submission
+
+In Eclipse,
+
+. Right click: Submissions -> Team -> Commit...
+. Enter `Lab 1 Done` for the commit message
+. Make sure `Main.java` is selected.
+. Click Commit
