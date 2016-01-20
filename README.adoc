@@ -107,4 +107,28 @@ In Eclipse,
 . Right click: Submissions -> Team -> Commit...
 . Enter `Lab 1 Done` for the commit message
 . Make sure `Main.java` is selected.
-. Click Commit
+. Click Commit and Push
+
+Or (in Git Bash or Terminal):
+
+----
+git commit -am "Lab 1 Done"
+git push origin master
+----
+
+== January 19
+
+Today, let's shorten the code we developed in the lab using:
+
+* `System.out.format` (namely, using `"%s"` as a placeholder and `\n` for newlines)
+* Methods to allow us to define our own abstractions we can invoke and reuse.
+
+By the way, these cause errors:
+
+* The class name and file name (without `.java`) should match
+* Mismatched curly-braces, or code outside of curly-braces (`{}`) won't work
+
+How to do Java right:
+
+* https://google.github.io/styleguide/javaguide.html[Java Style Guide]
+* https://github.com/akullpp/awesome-java[Awesome Java libraries]
