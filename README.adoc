@@ -132,3 +132,8 @@ How to do Java right:
 
 * https://google.github.io/styleguide/javaguide.html[Java Style Guide]
 * https://github.com/akullpp/awesome-java[Awesome Java libraries]
+
+== January 21
+
+Arrays
+Packages
