@@ -87,7 +87,7 @@ Open Eclipse
 . Click Open. You should see at the very least a project called Submissions.
 . Click Finish
 
-Next:
+=== How to get stuff from me
 
 . Right click on Submissions -> Team -> Remote -> Fetch from...
 . Select upstream and continue.
