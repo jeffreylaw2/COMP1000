@@ -89,7 +89,7 @@ The code won't compile
 
 |*Semantic error*
 
-The code does not behave as expected
+The code compiles, but does not behave as expected
 |. Computing misconceptions
 . Flawed assumptions in your code
 |. Debug: Set breakpoints and step over
@@ -97,7 +97,7 @@ The code does not behave as expected
 
 |*Schematic error*
 
-The code works, but it is difficult to read or understand
+The code works as expected, but it is difficult to read or understand
 |. No comments
 . Messy indentation
 . All code is in `main`
