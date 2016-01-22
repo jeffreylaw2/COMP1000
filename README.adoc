@@ -64,7 +64,56 @@ Be sure to install the http://www.oracle.com/technetwork/pt/java/javase/download
 
 == January 14
 
-Introduction to Java
+Introduction to Java basics
+
+It's easy to make errors when programming.
+The science of computer science is diagnosing, fixing, and preventing errors.
+
+[cols="2a,2a,2a"]
+|===
+|*Problem*
+|*Common Causes*
+|*Solutions*
+
+|*Syntax error*
+
+The code won't compile
+|. Misused keywords or operators
+. Class name does not match file name
+. Missing `;` at end of statements
+. Mismatched curly braces `{}`
+|. Study code carefully
+. Study compiler errors
+. Study quick fixes
+. Type curly braces together `{}` and then insert code
+
+|*Semantic error*
+
+The code does not behave as expected
+|. Computing misconceptions
+. Flawed assumptions in your code
+|. Debug: Set breakpoints and step over
+. Test assumptions
+
+|*Schematic error*
+
+The code works, but it is difficult to read or understand
+|. No comments
+. No indentation
+. All code is in `main`
+. Methods longer than a screen
+. Duplicate code
+. Reinventing the wheel
+
+|. Explain why in the comments
+. Indent properly. In Eclipse: `Ctrl-A` `Ctrl-I`
+. Keep Input, Computation, and Output separate
+. Don't repeat yourself
+. Follow a https://google.github.io/styleguide/javaguide.html[style guide] or use a style checker
+. Delegate to the https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html[Java API] or https://github.com/akullpp/awesome-java[third-party libraries]
+
+
+|===
 
 == January 15
 
@@ -135,5 +184,11 @@ How to do Java right:
 
 == January 21
 
-Arrays
-Packages
+I have an `incoming` folder under Submissions.
+Look, but don't touch (for now), unless you want a merge conflict.
+*Hint:* you don't want merge conflicts.
+
+Packages allow us to organize code into groups of related things.
+
+
+Arrays/Loops
