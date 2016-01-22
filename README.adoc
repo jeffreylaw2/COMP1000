@@ -2,7 +2,7 @@
 
 == How to use Git in Eclipse
 
-[cols="1a,1a"]
+[cols="1a,2a"]
 |===
 |*To...*
 |*... follow these steps in Eclipse*
