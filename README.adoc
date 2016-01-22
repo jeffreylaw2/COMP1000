@@ -17,27 +17,34 @@ Welcome! Let's get to know each other with an icebreaker. Answer these questions
 
 https://sites.google.com/site/witcomp1000fall2015/lectures[More notes]
 
-== January 8
+== January 8 Software setup
 
-=== Install Git and frontends
+[cols="1a,3a"]
+|===
+|*Download*
+|*Installation notes*
 
-Windows:: https://git-scm.com/download/win[Install Git for Windows]
-+
-https://github.com/gitextensions/gitextensions/releases/latest[Install Git Extensions]
-+
-NOTE: Select KDiff, and *choose OpenSSH* (not PuTTY); otherwise,
-stick to the default settings.
-+
-image:http://lawrancej.github.io/starterupper/images/what2install.png[Install KDiff]
-image:http://lawrancej.github.io/starterupper/images/openssh.png[Choose OpenSSH]
+|http://git-scm.com/download/[Git] (version control)
+|*Windows:* Stick with the default options and click `Next` until finished.
 
-Mac OS X:: http://git-scm.com/download/mac[Install git from here]
-+
-http://rowanj.github.io/gitx/[Install GitX-dev]
+*Mac OS X:* Got an error? Try:
 
-Linux:: http://git-scm.com/download/linux[Install git] using your package manager.
-+
-NOTE: Don't forget to use +sudo+ with your package manager.
+* Apple menu -> System Preferences... -> Security & Privacy -> Open Anyway.
+* Otherwise, try: Applications -> Utilities -> Terminal and type `git` and follow instructions to install git.
+
+*Linux:* Use `sudo` with your package manager.
+
+|http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+|Accept the licence agreement and follow instructions.
+
+|https://eclipse.org/downloads/[Eclipse IDE for Java Developers]
+|Extract (unzip) the downloaded file, and then run.
+
+*Windows:* In the taskbar, right click on the Eclipse icon and pin to taskbar.
+
+*Mac OS X:* In the Dock, right click on the Eclipse icon -> Options -> Keep in Dock
+|===
+
 
 === Run starterupper
 
@@ -53,7 +60,7 @@ curl https://gitlab.com/lawrancej/COMP1000/raw/master/main.sh | bash
 
 == January 12
 
-Be sure to install the http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+How to create your first program.
 
 . Open Eclipse
 . File -> New -> Project...
@@ -62,9 +69,25 @@ Be sure to install the http://www.oracle.com/technetwork/pt/java/javase/download
 . File -> New -> Class
 . Enter Main for class name, and click Finish
 
+Copy/paste this into `Main.java`:
+
+----
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, world!");
+  }
+}
+----
+
 == January 14
 
 Introduction to Java basics
+
+* `main`
+* Types `int`, `long`, `float`, `double`, `char`, `boolean`, `String`
+* Variables
+* Comments `// the compiler ignores this`
+* Output using `System.out.println()`
 
 It's easy to make errors when programming.
 The science of computer science is diagnosing, fixing, and preventing errors.
