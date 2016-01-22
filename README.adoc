@@ -113,16 +113,21 @@ The code won't compile
 |*Semantic error*
 
 The code compiles, but does not behave as expected
-|. Computing misconceptions
+|. Misconceptions about Java
 . Flawed assumptions in your code
+. No automated test suite
+. Inadequate testing
 |. Debug: Set breakpoints and step over
 . Test assumptions
+. Write automated tests for your code
+. Use a code coverage tool to ensure tests exercise all code
 
 |*Schematic error*
 
-The code works as expected, but it is difficult to read or understand
+The code is difficult to read, test, or understand
 |. No comments
 . Messy indentation
+. Cryptic identifiers
 . All code is in `main`
 . Methods longer than a screen
 . Duplicate code
@@ -130,8 +135,9 @@ The code works as expected, but it is difficult to read or understand
 
 |. Explain why in the comments
 . Indent properly. In Eclipse: `Ctrl-A` `Ctrl-I`
+. Name appropriately, avoid single letters
 . Separate Input, Computation, and Output
-. Split methods into small pieces
+. Split methods into smaller ones
 . Don't repeat yourself
 . Delegate to the https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html[Java API] or https://github.com/akullpp/awesome-java[third-party libraries]
 . Follow a https://google.github.io/styleguide/javaguide.html[style guide] or use a style checker
@@ -215,3 +221,32 @@ Packages allow us to organize code into groups of related things.
 
 
 Arrays/Loops
+
+== January 22 Lab 2
+
+Convert among units of temperature, mass, time, and distance:
+
+Temperature:: Kelvin (K), Celsius (C), Fahrenheit (F)
+Mass:: Kilograms (kg), Pounds (lbs), Grams (g), Ounces (oz)
+Distance:: Meters (m), Kilometers (km), Miles (miles)
+Time:: Seconds (s), Minutes (min), Hours (hr), Days (d), Years (y)
+
+Example:
+
+----
+Unit converter.
+Enter a measurement, unit, and new unit.
+1500 g kg
+1500 g = 1.5 kg
+----
+
+*Hint:* Pick a canonical unit for each unit (e.g., kelvin, grams, meters, seconds).
+First convert from the starting unit to the canonical unit,
+then convert from the canonical unit to the new (desired) unit.
+This requires less work than converting directly between all possible pairs of units.
+
+Feel free to:
+
+* Add additional measures (e.g., inches, feet, centimeters)
+* Keep prompting for units until the user enters quit
+* Say `Invalid conversion` when asked to convert between incompatible units (e.g., inches to Fahrenheit)
