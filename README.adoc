@@ -1,5 +1,36 @@
 = COMP1000
 
+== How to use Git in Eclipse
+
+[cols="1a,1a"]
+|===
+|*To...*
+|*... follow these steps in Eclipse*
+
+|*Submit work*
+|. Right click Submissions
+. Team -> Commit...
+. Enter a message (such as `Lab 1 done`)
+. Make sure the right files are selected (select at least one file)
+. Click Commit and Push
+
+|*Receive updates*
+|. Right click Submissions
+. Team -> Remote -> Fetch from...
+. Select `upstream`
+. Click Finish
+. Right click Submissions
+. Team -> Merge...
+. Select `upstream/master` (Under Remote Tracking)
+. Click Merge
+
+|*Verify the submission*
+|. Right click Submissions
+. Team -> Show in History
+. If `origin/master` is not at the top, I don't have your latest changes
+
+|===
+
 == Resources
 
 * https://sites.google.com/site/witcomp1000fall2015/lectures[CS1 Slides]
@@ -190,6 +221,7 @@ In Eclipse,
 Or (in Git Bash or Terminal):
 
 ----
+cd ~/COMP1000
 git commit -am "Lab 1 Done"
 git push origin master
 ----
@@ -201,16 +233,6 @@ Today, let's shorten the code we developed in the lab using:
 * `System.out.format` (namely, using `"%s"` as a placeholder and `\n` for newlines)
 * Methods to allow us to define our own abstractions we can invoke and reuse.
 
-By the way, these cause errors:
-
-* The class name and file name (without `.java`) should match
-* Mismatched curly-braces, or code outside of curly-braces (`{}`) won't work
-
-How to do Java right:
-
-* https://google.github.io/styleguide/javaguide.html[Java Style Guide]
-* https://github.com/akullpp/awesome-java[Awesome Java libraries]
-
 == January 21
 
 I have an `incoming` folder under Submissions.
@@ -218,7 +240,6 @@ Look, but don't touch (for now), unless you want a merge conflict.
 *Hint:* you don't want merge conflicts.
 
 Packages allow us to organize code into groups of related things.
-
 
 Arrays/Loops
 
