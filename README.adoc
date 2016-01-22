@@ -99,7 +99,7 @@ The code does not behave as expected
 
 The code works, but it is difficult to read or understand
 |. No comments
-. No indentation
+. Messy indentation
 . All code is in `main`
 . Methods longer than a screen
 . Duplicate code
@@ -107,11 +107,11 @@ The code works, but it is difficult to read or understand
 
 |. Explain why in the comments
 . Indent properly. In Eclipse: `Ctrl-A` `Ctrl-I`
-. Keep Input, Computation, and Output separate
+. Separate Input, Computation, and Output
+. Split methods into small pieces
 . Don't repeat yourself
-. Follow a https://google.github.io/styleguide/javaguide.html[style guide] or use a style checker
 . Delegate to the https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html[Java API] or https://github.com/akullpp/awesome-java[third-party libraries]
-
+. Follow a https://google.github.io/styleguide/javaguide.html[style guide] or use a style checker
 
 |===
 
