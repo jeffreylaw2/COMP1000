@@ -27,11 +27,11 @@ public class Main {
 				". However I do not " + verb + 
 				" it if you do it so " + adverb + 
 				" . Please be more " + adjective2 +
+				"%s" +
 				" the next time you put your " + noun +
 				" there" +
 				".\nThank you to the " + noun2 + 
 				" for reading this " + adjective +
 				" story!");
 	}
-}
-	
+}	
