@@ -1,5 +1,36 @@
 = COMP1000
 
+== How to use Git in Eclipse
+
+[cols="1a,2a"]
+|===
+|*To...*
+|*... follow these steps in Eclipse*
+
+|*Submit work*
+|. Right click Submissions
+. Team -> Commit...
+. Enter a message (such as `Lab 1 done`)
+. Make sure the right files are selected (select at least one file)
+. Click Commit and Push
+
+|*Receive updates*
+|. Right click Submissions
+. Team -> Remote -> Fetch from...
+. Select `upstream`
+. Click Finish
+. Right click Submissions
+. Team -> Merge...
+. Select `upstream/master` (Under Remote Tracking)
+. Click Merge
+
+|*Verify the submission*
+|. Right click Submissions
+. Team -> Show in History
+. If `origin/master` is not at the top, I don't have your latest changes
+
+|===
+
 == Resources
 
 * https://sites.google.com/site/witcomp1000fall2015/lectures[CS1 Slides]
@@ -17,27 +48,34 @@ Welcome! Let's get to know each other with an icebreaker. Answer these questions
 
 https://sites.google.com/site/witcomp1000fall2015/lectures[More notes]
 
-== January 8
+== January 8 Software setup
 
-=== Install Git and frontends
+[cols="1a,3a"]
+|===
+|*Download*
+|*Installation notes*
 
-Windows:: https://git-scm.com/download/win[Install Git for Windows]
-+
-https://github.com/gitextensions/gitextensions/releases/latest[Install Git Extensions]
-+
-NOTE: Select KDiff, and *choose OpenSSH* (not PuTTY); otherwise,
-stick to the default settings.
-+
-image:http://lawrancej.github.io/starterupper/images/what2install.png[Install KDiff]
-image:http://lawrancej.github.io/starterupper/images/openssh.png[Choose OpenSSH]
+|http://git-scm.com/download/[Git] (version control)
+|*Windows:* Stick with the default options and click `Next` until finished.
 
-Mac OS X:: http://git-scm.com/download/mac[Install git from here]
-+
-http://rowanj.github.io/gitx/[Install GitX-dev]
+*Mac OS X:* Got an error? Try:
 
-Linux:: http://git-scm.com/download/linux[Install git] using your package manager.
-+
-NOTE: Don't forget to use +sudo+ with your package manager.
+* Apple menu -> System Preferences... -> Security & Privacy -> Open Anyway.
+* Otherwise, try: Applications -> Utilities -> Terminal and type `git` and follow instructions to install git.
+
+*Linux:* Use `sudo` with your package manager.
+
+|http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+|Accept the licence agreement and follow instructions.
+
+|https://eclipse.org/downloads/[Eclipse IDE for Java Developers]
+|Extract (unzip) the downloaded file, and then run.
+
+*Windows:* In the taskbar, right click on the Eclipse icon and pin to taskbar.
+
+*Mac OS X:* In the Dock, right click on the Eclipse icon -> Options -> Keep in Dock
+|===
+
 
 === Run starterupper
 
@@ -53,7 +91,7 @@ curl https://gitlab.com/lawrancej/COMP1000/raw/master/main.sh | bash
 
 == January 12
 
-Be sure to install the http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+How to create your first program.
 
 . Open Eclipse
 . File -> New -> Project...
@@ -62,9 +100,80 @@ Be sure to install the http://www.oracle.com/technetwork/pt/java/javase/download
 . File -> New -> Class
 . Enter Main for class name, and click Finish
 
+Copy/paste this into `Main.java`:
+
+----
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, world!");
+  }
+}
+----
+
 == January 14
 
-Introduction to Java
+Introduction to Java basics
+
+* `main`
+* Types `int`, `long`, `float`, `double`, `char`, `boolean`, `String`
+* Variables
+* Comments `// the compiler ignores this`
+* Output using `System.out.println()`
+
+It's easy to make errors when programming.
+The science of computer science is diagnosing, fixing, and preventing errors.
+
+[cols="2a,2a,2a"]
+|===
+|*Problem*
+|*Common Causes*
+|*Solutions*
+
+|*Syntax error*
+
+The code won't compile
+|. Misused keywords or operators
+. Class name does not match file name
+. Missing `;` at end of statements
+. Mismatched curly braces `{}`
+|. Study code carefully
+. Study compiler errors
+. Study quick fixes
+. Type curly braces together `{}` and then insert code
+
+|*Semantic error*
+
+The code compiles, but does not behave as expected
+|. Misconceptions about Java
+. Flawed assumptions in your code
+. No automated test suite
+. Inadequate testing
+|. Debug: Set breakpoints and step over
+. Test assumptions
+. Write automated tests for your code
+. Use a code coverage tool to ensure tests exercise all code
+
+|*Schematic error*
+
+The code is difficult to read, test, or understand
+|. No comments
+. Messy indentation
+. Cryptic identifiers
+. All code is in `main`
+. Methods longer than a screen
+. Duplicate code
+. Reinventing the wheel
+
+|. Explain why in the comments
+. Indent properly. In Eclipse: `Ctrl-A` `Ctrl-I`
+. Name appropriately, avoid single letters
+. Separate Input, Computation, and Output
+. Split methods into smaller ones
+. Don't repeat yourself
+. Delegate to the https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html[Java API] or https://github.com/akullpp/awesome-java[third-party libraries]
+. Follow a https://google.github.io/styleguide/javaguide.html[style guide] or use a style checker
+
+|===
 
 == January 15
 
@@ -112,6 +221,7 @@ In Eclipse,
 Or (in Git Bash or Terminal):
 
 ----
+cd ~/COMP1000
 git commit -am "Lab 1 Done"
 git push origin master
 ----
@@ -123,17 +233,41 @@ Today, let's shorten the code we developed in the lab using:
 * `System.out.format` (namely, using `"%s"` as a placeholder and `\n` for newlines)
 * Methods to allow us to define our own abstractions we can invoke and reuse.
 
-By the way, these cause errors:
-
-* The class name and file name (without `.java`) should match
-* Mismatched curly-braces, or code outside of curly-braces (`{}`) won't work
-
-How to do Java right:
-
-* https://google.github.io/styleguide/javaguide.html[Java Style Guide]
-* https://github.com/akullpp/awesome-java[Awesome Java libraries]
-
 == January 21
 
-Arrays
-Packages
+I have an `incoming` folder under Submissions.
+Look, but don't touch (for now), unless you want a merge conflict.
+*Hint:* you don't want merge conflicts.
+
+Packages allow us to organize code into groups of related things.
+
+Arrays/Loops
+
+== January 22 Lab 2
+
+Convert among units of temperature, mass, time, and distance:
+
+Temperature:: Kelvin (K), Celsius (C), Fahrenheit (F)
+Mass:: Kilograms (kg), Pounds (lbs), Grams (g), Ounces (oz)
+Distance:: Meters (m), Kilometers (km), Miles (miles)
+Time:: Seconds (s), Minutes (min), Hours (hr), Days (d), Years (y)
+
+Example:
+
+----
+Unit converter.
+Enter a measurement, unit, and new unit.
+1500 g kg
+1500 g = 1.5 kg
+----
+
+*Hint:* Pick a canonical unit for each unit (e.g., kelvin, grams, meters, seconds).
+First convert from the starting unit to the canonical unit,
+then convert from the canonical unit to the new (desired) unit.
+This requires less work than converting directly between all possible pairs of units.
+
+Feel free to:
+
+* Add additional measures (e.g., inches, feet, centimeters)
+* Keep prompting for units until the user enters quit
+* Say `Invalid conversion` when asked to convert between incompatible units (e.g., inches to Fahrenheit)
