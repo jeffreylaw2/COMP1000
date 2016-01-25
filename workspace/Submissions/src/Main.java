@@ -5,7 +5,7 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		
 		String noun, verb, adjective, adjective1, adverb, noun1, noun2, adjective2;
-		System.out.print("Enter a noun:  ");
+		System.out.print("Enter a number and unit  ");
 		noun = scanner.nextLine();
 		System.out.print ("Enter a adjective:  ");
 		adjective = scanner.nextLine ();

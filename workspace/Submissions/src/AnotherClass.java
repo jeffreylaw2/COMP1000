@@ -6,7 +6,7 @@ public class AnotherClass {
 		// have associated identifiers
 		// number is an integer with value zero
 		// variables are a box into which you put data
-		// type identifier = initial_value;
+		// type identifier = initial_value;	
 		// int number = 0.1; // this is clearly wrong
 		// just force it into an integer
 		int number = (int) 0.1; // this is called type-casting
