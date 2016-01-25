@@ -40,6 +40,99 @@ curl https://gitlab.com/lawrancej/COMP1000/raw/master/main.sh | bash
 
 *Mac*:: `Command-C` to copy, `Command-V` to paste
 
+== Eclipse usage
+
+Open Eclipse.
+
+*Import* the class project into Eclipse, if you haven't done so.
+
+. Click File -> Import...
+. General -> Existing Projects into Workspace...
+. Click Next
+. Click Browse...
+. Navigate to your home directory -> COMP1000
+. Click Open. You should see at least one project.
+. Click Finish
+
+[cols="1a,3a"]
+|===
+|*To...*
+|*... follow these steps:*
+
+|*Submit work*
+
+. Work
+. Stage
+. Commit
+. Push
+
+|*Work* within the class project or copy into it.
+
+. In the Package Explorer, right click on the class project
+. Team -> Commit...
+. Enter a message (such as `Lab 1 done`)
+. *Stage* by selecting files to add to the commit (snapshot).
+. Click *Commit* and *Push*
+
+|*Confirm submission*
+
+. Show history
+. Locate `origin/master`
+
+| *Show history* of commits.
+
+. In the Package Explorer, right click on the class project
+. Team -> Show in History
+
+*Locate* `origin/master` in the commit history to see when you last submitted work.
+If it's at the top, you pushed successfully.
+If it's missing (or not at the top), I don't have your latest changes, and you need to push.
+
+|*Receive updates*
+
+. Fetch
+. Merge
+. Check
+
+|*Fetch* to download updates from me.
+
+. In the Package Explorer, right click on the class project
+. Team -> Remote -> Fetch from...
+. Select `upstream`
+. Click Finish
+
+*Merge* `upstream/master` to combine my updates with your work.
+
+. In the Package Explorer, right click on the class project
+. Team -> Merge...
+. Select `upstream/master` (Under Remote Tracking)
+. Click Merge
+
+*Check* for errors to see if you need to fix anything.
+
+Eclipse may complain that a file `would be overwritten by a merge`.
+This means that you haven't _staged_ or _committed_ those file(s) yet,
+and Eclipse is preventing you from losing that work.
+Stage and commit the file(s), and try to merge again.
+
+Eclipse may warn about merge conflicts.
+This means that we both made different changes to the same lines in _conflicting_ files.
+Eclipse shows a red icon next to _conflicting_ files.
+
+Examine all conflicting file(s).
+You will notice lines with `<<<<<<<` or `=======` or `>>>>>>>` that weren’t there before.
+These _merge conflict markers_ show where (and how) changes created conflict.
+Although you may remove them manually, Eclipse has a merge tool to assist you.
+
+To fix merge conflicts:
+
+. In the Package Explorer, right click on the class project
+. Team -> Merge Tool
+
+Finally, to fix the merge conflict, stage and commit all conflicting files (after you've fixed them).
+
+|===
+
 == Command line usage
 
 First, open your terminal.
@@ -50,7 +143,7 @@ First, open your terminal.
 *Mac OS X*:: Spotlight Search (Press `F4`) -> Terminal
 ****
 
-Next, go to the repository for this course.
+Next, go to the course repository.
 
 ----
 cd ~/COMP1000
@@ -100,8 +193,7 @@ To understand the output:
 . Stage
 . Commit
 . Push
-|*Work* by saving files inside the course repository `COMP1000`,
-or copy files into that folder.
+|*Work* by saving or copying files inside the course repository.
 
 *Stage* your work by selecting files to add to the next commit (snapshot).
 Git _tracks changes_ to the files you stage.
@@ -316,97 +408,4 @@ Git GUI may warn about merge conflicts.
 This means that we both made different changes to the same lines in _conflicting_ files.
 
 To fix the merge conflict, follow the instructions described in the command line section.
-|===
-
-== Eclipse usage
-
-Open Eclipse.
-
-*Import* the class project into Eclipse, if you haven't done so.
-
-. Click File -> Import...
-. General -> Existing Projects into Workspace...
-. Click Next
-. Click Browse...
-. Navigate to your home directory -> COMP1000
-. Click Open. You should see at least one project.
-. Click Finish
-
-[cols="1a,3a"]
-|===
-|*To...*
-|*... follow these steps:*
-
-|*Submit work*
-
-. Work
-. Stage
-. Commit
-. Push
-
-|*Work* within the class project or copy into it.
-
-. In the Package Explorer, right click on the class project
-. Team -> Commit...
-. Enter a message (such as `Lab 1 done`)
-. *Stage* by selecting files to add to the commit (snapshot).
-. Click *Commit* and *Push*
-
-|*Confirm submission*
-
-. Show history
-. Locate `origin/master`
-
-| *Show history* of commits.
-
-. In the Package Explorer, right click on the class project
-. Team -> Show in History
-
-*Locate* `origin/master` in the commit history to see when you last submitted work.
-If it's at the top, you pushed successfully.
-If it's missing (or not at the top), I don't have your latest changes, and you need to push.
-
-|*Receive updates*
-
-. Fetch
-. Merge
-. Check
-
-|*Fetch* to download updates from me.
-
-. In the Package Explorer, right click on the class project
-. Team -> Remote -> Fetch from...
-. Select `upstream`
-. Click Finish
-
-*Merge* `upstream/master` to combine my updates with your work.
-
-. In the Package Explorer, right click on the class project
-. Team -> Merge...
-. Select `upstream/master` (Under Remote Tracking)
-. Click Merge
-
-*Check* for errors to see if you need to fix anything.
-
-Eclipse may complain that a file `would be overwritten by a merge`.
-This means that you haven't _staged_ or _committed_ those file(s) yet,
-and Eclipse is preventing you from losing that work.
-Stage and commit the file(s), and try to merge again.
-
-Eclipse may warn about merge conflicts.
-This means that we both made different changes to the same lines in _conflicting_ files.
-Eclipse shows a red icon next to _conflicting_ files.
-
-Examine all conflicting file(s).
-You will notice lines with `<<<<<<<` or `=======` or `>>>>>>>` that weren’t there before.
-These _merge conflict markers_ show where (and how) changes created conflict.
-Although you may remove them manually, Eclipse has a merge tool to assist you.
-
-To fix merge conflicts:
-
-. In the Package Explorer, right click on the class project
-. Team -> Merge Tool
-
-Finally, to fix the merge conflict, stage and commit all conflicting files (after you've fixed them).
-
 |===
