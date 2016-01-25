@@ -25,16 +25,6 @@ https://sites.google.com/site/witcomp1000fall2015/lectures[More notes]
 |*Download*
 |*Installation notes*
 
-|http://git-scm.com/download/[Git] (version control)
-|*Windows:* Stick with the default options and click `Next` until finished.
-
-*Mac OS X:* Got an error? Try:
-
-* Apple menu -> System Preferences... -> Security & Privacy -> Open Anyway.
-* Otherwise, try: Applications -> Utilities -> Terminal and type `git` and follow instructions to install git.
-
-*Linux:* Use `sudo` with your package manager.
-
 |http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
 |Accept the licence agreement and follow instructions.
 
@@ -46,18 +36,7 @@ https://sites.google.com/site/witcomp1000fall2015/lectures[More notes]
 *Mac OS X:* In the Dock, right click on the Eclipse icon -> Options -> Keep in Dock
 |===
 
-
-=== Run starterupper
-
-Starterupper sets up git and project hosting for this class;
-it is safe to run even if you already have git and SSH keys set up on your machine.
-
-Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in the command below.
-Press `Shift-Insert` to paste in Git Bash.
-
-----
-curl https://gitlab.com/lawrancej/COMP1000/raw/master/main.sh | bash
-----
+https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[Install git, run starterupper]
 
 == January 12
 
