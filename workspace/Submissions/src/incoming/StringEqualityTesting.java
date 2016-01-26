@@ -26,14 +26,14 @@ public class StringEqualityTesting {
 	/**
 	 * Convert from meters, grams, seconds, etc. to desired unit
 	 */
-	private static double toUnit(String desiredUnit) {
+	public static double toUnit(String desiredUnit) {
 		return 0;
 	}
 
 	/**
 	 * Convert to meters, grams, seconds, etc.
 	 */
-	private static double toBaseUnit(String unit) {
+	public static double toBaseUnit(String unit) {
 		if (unit.equals("km")) {
 			return 1000;
 		} else if (unit.equals("in")) {
