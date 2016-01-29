@@ -1,5 +1,7 @@
 = COMP1000
 
+NOTE: Midterm is coming on February 12.
+
 == Resources
 
 * https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]
