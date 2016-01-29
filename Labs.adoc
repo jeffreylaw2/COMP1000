@@ -1,0 +1,73 @@
+= Labs
+
+== Lab 0: Software setup
+
+[cols="1a,3a"]
+|===
+|*Download*
+|*Installation notes*
+
+|http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+|Accept the licence agreement and follow instructions.
+
+|https://eclipse.org/downloads/[Eclipse IDE for Java Developers]
+|Extract (unzip) the downloaded file, and then run.
+
+*Windows:* In the taskbar, right click on the Eclipse icon and pin to taskbar.
+
+*Mac OS X:* In the Dock, right click on the Eclipse icon -> Options -> Keep in Dock
+|===
+
+https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[Install git, run starterupper]
+
+== Lab 1: Mad Libs!
+
+Implement Mad Libs! Read in nouns, verbs, etc., and at the end, print out a silly story.
+
+https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]
+
+== Lab 2: Unit conversion
+
+Convert among units of temperature, mass, time, and distance:
+
+Temperature:: Kelvin (K), Celsius (C), Fahrenheit (F)
+Mass:: Kilograms (kg), Pounds (lbs), Grams (g), Ounces (oz)
+Distance:: Meters (m), Kilometers (km), Miles (miles)
+Time:: Seconds (s), Minutes (min), Hours (hr), Days (d), Years (y)
+
+Example:
+
+----
+Unit converter.
+Enter a measurement, unit, and new unit.
+1500 g kg
+1500 g = 1.5 kg
+----
+
+*Hint:* Pick a canonical unit for each unit (e.g., kelvin, grams, meters, seconds).
+First convert from the starting unit to the canonical unit,
+then convert from the canonical unit to the new (desired) unit.
+This requires less work than converting directly between all possible pairs of units.
+
+Feel free to:
+
+* Add additional measures (e.g., inches, feet, centimeters)
+* Keep prompting for units until the user enters quit
+* Say `Invalid conversion` when asked to convert between incompatible units (e.g., inches to Fahrenheit)
+
+https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]
+
+== Lab 3: Letter count / anagram checker
+
+Flesh out the starter code in the `Submissions/src/lab3` folder.
+
+TIP: https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]
+
+Complete: `min`, `max`, `sum`, `average`
+
+`int[] letterHistogram(String text)`:: Given a string, count the number of instances of each letter (`a`-`z` only) in an array.
+Use the ASCII code of each character as the index in an array.
+For example, in the string `hello world`, characters `w`, `h`, `e`, `r`, `d` each occur once, `o` occurs twice, and `l` occurs 3 times.
+
+`boolean isAnagram(String thing1, String thing2)`:: Using `letterHistogram`, determine if two Strings are http://wordsmith.org/anagram/[anagrams of each other]. Examples:
+ `dormitory` is an anagram of `dirty room`; `mars` is an anagram of `rams`).

@@ -1,0 +1,59 @@
+= Lectures
+
+== January 7: Introduce yourself
+
+Welcome! Let's get to know each other with an icebreaker. Answer these questions:
+
+* What is your name?
+* What is your major, and why'd you pick it?
+* Tell us something nobody else in the room knows about you.
+
+== January 12: Hello, world!
+
+How to create your first program.
+
+. Open Eclipse
+. File -> New -> Project...
+. Java -> Java Project...
+. Enter Project name, Finish, and Open Java Perspective
+. File -> New -> Class
+. Enter Main for class name, and click Finish
+
+Copy/paste this into `Main.java`:
+
+----
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, world!");
+  }
+}
+----
+
+== January 14: Java basics
+
+Introduction to Java basics
+
+* `main`
+* Types `int`, `long`, `float`, `double`, `char`, `boolean`, `String`
+* Variables, constants and naming
+* Comments `// the compiler ignores this`
+* Output using `System.out.println()`
+
+== January 19: More Java basics
+
+Let's shorten the code we developed in lab 1 using:
+
+* `System.out.format` (namely, using `"%s"` as a placeholder and `\n` for newlines)
+* Methods to allow us to define our own abstractions we can invoke and reuse.
+
+== January 21: Packages, arrays, loops
+
+January 21
+
+I have an `incoming` folder under Submissions.
+Look, but don't touch (for now), unless you want a merge conflict.
+*Hint:* you don't want merge conflicts.
+
+Packages allow us to organize code into groups of related things.
+
+Arrays/Loops

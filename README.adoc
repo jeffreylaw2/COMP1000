@@ -7,88 +7,22 @@
 * http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
 * https://eclipse.org/downloads/[Eclipse downloads]
 
-== January 7
+== Agenda
 
-=== Introduce yourself
-Welcome! Let's get to know each other with an icebreaker. Answer these questions:
+[horizontal]
+January 7:: https://gitlab.com/lawrancej/COMP1000/blob/master/Lectures.adoc[Introductions]
+January 8:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 0: Software setup]
+January 12:: https://gitlab.com/lawrancej/COMP1000/blob/master/Lectures.adoc[Hello, world!]
+January 14:: https://gitlab.com/lawrancej/COMP1000/blob/master/Lectures.adoc[Java basics]
+January 15:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 1: Mad Libs!]
+January 19:: https://gitlab.com/lawrancej/COMP1000/blob/master/Lectures.adoc[More Java basics]
+January 21:: https://gitlab.com/lawrancej/COMP1000/blob/master/Lectures.adoc[Packages, arrays, loops]
+January 22:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 2: Unit conversion]
+January 26:: JUnit testing
+January 28:: Classes, objects
+January 29:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 3: Letter count / anagram checker]
 
-* What is your name?
-* Why is Computer Science your major?
-* Tell us something nobody else in the room knows about you.
-
-https://sites.google.com/site/witcomp1000fall2015/lectures[More notes]
-
-== January 8 Software setup
-
-[cols="1a,3a"]
-|===
-|*Download*
-|*Installation notes*
-
-|http://git-scm.com/download/[Git] (version control)
-|*Windows:* Stick with the default options and click `Next` until finished.
-
-*Mac OS X:* Got an error? Try:
-
-* Apple menu -> System Preferences... -> Security & Privacy -> Open Anyway.
-* Otherwise, try: Applications -> Utilities -> Terminal and type `git` and follow instructions to install git.
-
-*Linux:* Use `sudo` with your package manager.
-
-|http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
-|Accept the licence agreement and follow instructions.
-
-|https://eclipse.org/downloads/[Eclipse IDE for Java Developers]
-|Extract (unzip) the downloaded file, and then run.
-
-*Windows:* In the taskbar, right click on the Eclipse icon and pin to taskbar.
-
-*Mac OS X:* In the Dock, right click on the Eclipse icon -> Options -> Keep in Dock
-|===
-
-
-=== Run starterupper
-
-Starterupper sets up git and project hosting for this class;
-it is safe to run even if you already have git and SSH keys set up on your machine.
-
-Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in the command below.
-Press `Shift-Insert` to paste in Git Bash.
-
-----
-curl https://gitlab.com/lawrancej/COMP1000/raw/master/main.sh | bash
-----
-
-== January 12
-
-How to create your first program.
-
-. Open Eclipse
-. File -> New -> Project...
-. Java -> Java Project...
-. Enter Project name, Finish, and Open Java Perspective
-. File -> New -> Class
-. Enter Main for class name, and click Finish
-
-Copy/paste this into `Main.java`:
-
-----
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello, world!");
-  }
-}
-----
-
-== January 14
-
-Introduction to Java basics
-
-* `main`
-* Types `int`, `long`, `float`, `double`, `char`, `boolean`, `String`
-* Variables
-* Comments `// the compiler ignores this`
-* Output using `System.out.println()`
+== Rubric
 
 It's easy to make errors when programming.
 The science of computer science is diagnosing, fixing, and preventing errors.
@@ -144,57 +78,3 @@ The code is difficult to read, test, or understand
 . Follow a https://google.github.io/styleguide/javaguide.html[style guide] or use a style checker
 
 |===
-
-== January 15
-
-Implement Mad Libs! Read in nouns, verbs, etc., and at the end, print out a silly story.
-
-https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]
-
-== January 19
-
-Today, let's shorten the code we developed in the lab using:
-
-* `System.out.format` (namely, using `"%s"` as a placeholder and `\n` for newlines)
-* Methods to allow us to define our own abstractions we can invoke and reuse.
-
-== January 21
-
-I have an `incoming` folder under Submissions.
-Look, but don't touch (for now), unless you want a merge conflict.
-*Hint:* you don't want merge conflicts.
-
-Packages allow us to organize code into groups of related things.
-
-Arrays/Loops
-
-== January 22 Lab 2
-
-Convert among units of temperature, mass, time, and distance:
-
-Temperature:: Kelvin (K), Celsius (C), Fahrenheit (F)
-Mass:: Kilograms (kg), Pounds (lbs), Grams (g), Ounces (oz)
-Distance:: Meters (m), Kilometers (km), Miles (miles)
-Time:: Seconds (s), Minutes (min), Hours (hr), Days (d), Years (y)
-
-Example:
-
-----
-Unit converter.
-Enter a measurement, unit, and new unit.
-1500 g kg
-1500 g = 1.5 kg
-----
-
-*Hint:* Pick a canonical unit for each unit (e.g., kelvin, grams, meters, seconds).
-First convert from the starting unit to the canonical unit,
-then convert from the canonical unit to the new (desired) unit.
-This requires less work than converting directly between all possible pairs of units.
-
-Feel free to:
-
-* Add additional measures (e.g., inches, feet, centimeters)
-* Keep prompting for units until the user enters quit
-* Say `Invalid conversion` when asked to convert between incompatible units (e.g., inches to Fahrenheit)
-
-https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]

@@ -102,7 +102,7 @@ public class Unit
 		
 		if(fromUnit.equals("m") || fromUnit.equals("km") ||(fromUnit.equals("mi")))
 		measurement = lengthConversion(measurement, fromUnit, toUnit);
-		else if(fromUnit.equals("g") || fromUnit.equals("kg") || (fromUnit.equals("g") || fromUnit.equals("kg")))
+		else if(fromUnit.equals("g") || fromUnit.equals("kg") || (fromUnit.equals("oz") || fromUnit.equals("lbs")))
 		measurement = massConversion(measurement, fromUnit, toUnit);
 		else if(fromUnit.equals("F") || fromUnit.equals("C") || fromUnit.equals("K"))
 		measurement = temperatureConversion(measurement, fromUnit, toUnit);
