@@ -61,9 +61,9 @@ https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, c
 
 Flesh out the starter code in the `Submissions/src/lab3` folder.
 
-Complete: `min`, `max`, `sum`, `average`
-
 TIP: https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]
+
+Complete: `min`, `max`, `sum`, `average`
 
 `int[] letterHistogram(String text)`:: Given a string, count the number of instances of each letter (`a`-`z` only) in an array.
 Use the ASCII code of each character as the index in an array.
