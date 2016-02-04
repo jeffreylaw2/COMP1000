@@ -2,13 +2,20 @@ package incoming;
 
 import java.util.Date;
 
+// It's conventional to name things a certain way:
+// TypeNameLookLikeThis
+// variableNamesLookLikeThis
+// constantsLookLikeThis
+// ENUM_OPTIONS_ARE_LIKE_THIS
+// MAGIC_NUMBERS_ARE_LIKE_THIS_TOO
 // Class is the cookie-cutter
 // The object is the cookie
 // The memory is the cookie dough
 // Here we're defining a type (i.e., a class)
 public class Person {
 	String name;
-	Date birthday;
+	// If you make something final, you can't reassign it
+	final Date birthday;
 	// this defines a type
 	enum Gender {
 		// the options for gender
@@ -45,7 +52,7 @@ public class Person {
 		// This line...
 		Person you = new Person("You", new Date(), Person.Gender.NOT_SPECIFIED);
 		// ... is the same as these lines...
-		you.birthday = new Date();
+//		you.birthday = new Date();
 		you.gender = Person.Gender.NOT_SPECIFIED;
 		you.name = "You";
 		
