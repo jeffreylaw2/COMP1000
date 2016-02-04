@@ -24,9 +24,7 @@ public class MoreArrays {
         // Read from the reader
         // Read in a line, and as long as there is a line...
         while ((inputLine = in.readLine()) != null) {
-        		for (char c : inputLine.toCharArray()) {
-        			array[c]++;
-        		}
+        		count(inputLine, array);
         		// Print it out
         		System.out.println(inputLine);
         }
@@ -37,9 +35,22 @@ public class MoreArrays {
         // this is our happy place
 		return array;
 	}
+	private static void count(String inputLine, int[] array) {
+		// go through each character of the string
+		for (char c : inputLine.toCharArray()) {
+			// array[c] = array[c] + 1;
+			array[c]++;
+		}
+	}
 	public static void main(String[] args) throws IOException {
 		int[] array =
 			counts(new URL("https://ia801405.us.archive.org/18/items/alicesadventures19033gut/19033.txt"));
-		System.out.println(array);
+		int[] array2 = new int[256];
+		count("hello", array2);
+		System.out.println(array2['l']);
+		System.out.println(array2['o']);
+		System.out.println(array['.']);
+		System.out.println(array[' ']);
+		System.out.println(array[',']);
 	}
 }
