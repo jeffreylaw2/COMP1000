@@ -7,6 +7,7 @@ NOTE: Midterm is coming on February 12.
 * https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]
 * https://sites.google.com/site/witcomp1000fall2015/lectures[CS1 Slides]
 * http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+* https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html[Java API documentation]
 * https://eclipse.org/downloads/[Eclipse downloads]
 
 == Agenda
