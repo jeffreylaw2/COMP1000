@@ -24,6 +24,7 @@ January 22:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 2: 
 January 26:: JUnit testing
 January 28:: Classes, objects
 January 29:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 3: Letter count / anagram checker]
+February 19:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 4: Calculate interest / Guessing game]
 
 == Rubric
 

@@ -71,3 +71,7 @@ For example, in the string `hello world`, characters `w`, `h`, `e`, `r`, `d` eac
 
 `boolean isAnagram(String thing1, String thing2)`:: Using `letterHistogram`, determine if two Strings are http://wordsmith.org/anagram/[anagrams of each other]. Examples:
  `dormitory` is an anagram of `dirty room`; `mars` is an anagram of `rams`).
+
+== Lab 4: Interest and Guessing game
+
+https://a8d9f8ba-a-62cb3a1a-s-sites.googlegroups.com/site/witcomp1000fall2015/files/pa4.pdf?attachauth=ANoY7cpGQlD06LLu9ZY8V0AD7bZPjEbpE4RECmBXQdKTiDlRsT_P6WRT88Z3XropvdUmMoe9EIhAWy3JNKHCTSvDMzUuoRX1rUXdoEWK4SVhqgUsg0krMXixYMfCdvsXfEE272itnDVZqlgu-vM7yc6HFmoBaKw9njHl-dTsOGc3EH6NrpHzvU8IXlOcQB886ahgnPOGm3842MEdGcmpG-yHEu6V7bXBi4rMW3JuHRcnM0TeO3xHg94%3D&attredirects=0[Programming assignment 4]
