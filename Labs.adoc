@@ -99,7 +99,5 @@ curl https://gitlab.com/lawrancej/COMP1000Project/raw/master/main.sh | bash
 
 ----
 cd ~/COMP1000Project
-# Don't copy this literally
-git remote add somebody git@github.com:somebody/COMP1000Project.git
-git fetch --all
+./main.sh
 ----
