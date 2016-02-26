@@ -75,3 +75,31 @@ For example, in the string `hello world`, characters `w`, `h`, `e`, `r`, `d` eac
 == Lab 4: Interest and Guessing game
 
 https://a8d9f8ba-a-62cb3a1a-s-sites.googlegroups.com/site/witcomp1000fall2015/files/pa4.pdf?attachauth=ANoY7cpGQlD06LLu9ZY8V0AD7bZPjEbpE4RECmBXQdKTiDlRsT_P6WRT88Z3XropvdUmMoe9EIhAWy3JNKHCTSvDMzUuoRX1rUXdoEWK4SVhqgUsg0krMXixYMfCdvsXfEE272itnDVZqlgu-vM7yc6HFmoBaKw9njHl-dTsOGc3EH6NrpHzvU8IXlOcQB886ahgnPOGm3842MEdGcmpG-yHEu6V7bXBi4rMW3JuHRcnM0TeO3xHg94%3D&attredirects=0[Programming assignment 4]
+
+== Lab 5: Group project setup
+
+=== Speed dating
+
+Goal: find a partner or partners.
+
+Ideally, work in pairs.
+Working on this individually is *very* challenging and not recommended.
+Groups of 3 are okay, but larger groups are not recommended.
+
+=== Repository setup
+
+Goal: Set up your repository for the group project.
+
+----
+curl https://gitlab.com/lawrancej/COMP1000Project/raw/master/main.sh | bash
+----
+
+. Add each of your friend(s) as collaborators to your Gitlab repository.
+. Add your friend(s) SSH urls to git.
+
+----
+cd ~/COMP1000Project
+# Don't copy this literally
+git remote add somebody git@github.com:somebody/COMP1000Project.git
+git fetch --all
+----
