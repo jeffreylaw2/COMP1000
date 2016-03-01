@@ -116,7 +116,7 @@ I do not recommend working on this project individually, as it may be overwhelmi
 Groups of 3 are okay, but larger groups are not allowed (no exceptions).
 
 Keep in mind that we have roughly two weeks remaining, so budget your time accordingly.
-To begin, brainstorm program ideas with your group and browse the examples in Qt Creator.
+To begin, brainstorm program ideas with your group.
 Decide quickly on a project idea of mutual interest to your group, and commit to it (changing ideas halfway through is a recipe for disaster).
 Re-implementing a well-known game, utility or application (with some reference implementation) is preferable to implementing something completely original, because the difficult design work is already done for you.
 That said, I’d rather see each group will work on different projects than several groups working on similar projects.
