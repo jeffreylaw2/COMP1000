@@ -108,14 +108,14 @@ cd ~/COMP1000Project
 
 Design and write a graphical program using Eclipse.
 The program must be graphical and interactive (i.e., it must respond to events such as mouse clicks and key presses).
-It is okay if the program is based an existing example program (indeed, studying example programs is a good way to learn, and the examples gallery is extensive).
+It is okay if the program is based an existing example program (indeed, studying example programs is a good way to learn).
 However, if you base your program on an example, you must extend it in some nontrivial way, because passing off someone else’s work as your own is plagiarism.
 
 Ideally, work in pairs on this program.
 I do not recommend working on this project individually, as it may be overwhelming.
 Groups of 3 are okay, but larger groups are not allowed (no exceptions).
 
-Keep in mind that we have roughly two weeks remaining, so budget your time accordingly.
+Keep in mind that we have until the end of the semester, so budget your time accordingly.
 To begin, brainstorm program ideas with your group.
 Decide quickly on a project idea of mutual interest to your group, and commit to it (changing ideas halfway through is a recipe for disaster).
 Re-implementing a well-known game, utility or application (with some reference implementation) is preferable to implementing something completely original, because the difficult design work is already done for you.

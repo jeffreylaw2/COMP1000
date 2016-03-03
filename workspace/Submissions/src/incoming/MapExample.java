@@ -16,7 +16,7 @@ public class MapExample {
 		// Print out 1000.0
 		System.out.println(database.get("km"));
 		String fromUnit, toUnit;
-		fromUnit = "km"; toUnit = "cm";
+		fromUnit = "km"; toUnit = "second";
 		// Print out length
 		System.out.println(types.get(fromUnit).equals(types.get(toUnit)));
 	}
