@@ -28,6 +28,7 @@ February 19:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 4:
 February 26:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 5: Group project setup]
 March 1:: GUI stuff
 March 3:: More GUI and project stuff
+March 4:: Lab 6: Project brainstorming
 
 == Rubric
 

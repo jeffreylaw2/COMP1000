@@ -124,3 +124,31 @@ That said, I’d rather see each group will work on different projects than seve
 At the end of the semester, your group must demonstrate the program to the class.
 I expect everyone to explain how they contributed to their program.
 If the program is based on an example, your group must show how it differs from the original example during the demonstration.
+
+== Lab 6: Project brainstorming / proposal
+
+Example project ideas (from past classes):
+
+* Asteroids
+* Breakout (like pong, but a little more complex)
+* Blackjack
+* Checkers
+* Connect 4
+* Hangman
+* Minesweeper
+* Pacman
+* Paint
+* Racing game
+* Rhyming dictionary
+* Sliding tile puzzle
+* Solitaire
+* Tetris
+* Tower defense
+
+I will live code and explain the snake game.
+
+If you start from some code found online, you must commit that as your initial commit
+and document it. You will be required to improve it substantially.
+
+Submit a brief proposal (just long enough so I have an idea of what you're trying to achieve).
+My email is: lawrancej@wit.edu
