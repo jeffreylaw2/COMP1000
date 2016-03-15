@@ -71,9 +71,9 @@ The model represents the state of the application and how it changes over time.
 
 Ask these questions:
 
-. What information do I need to represent the state of my game or application?
-. What are the actions or commands that can occur to update the state of the game or application?
-. What other methods do I need to query the state of the game or application?
+. What information do I need to represent the state of my game or application? These comprise the model data.
+. What are the actions or commands that can occur to update the state of the game or application? These comprise the model actions.
+. What other methods do I need to query the state of the game or application? These comprise the model queries.
 
 === View
 
@@ -93,7 +93,7 @@ food:: a coordinate (a pair of integers)
 direction:: up, down, left, right, or none
 arena:: the rectangle (represented as a coordinate) in which the snake can move.
 
-Model commands are any methods that update model data.
+Model actions are any methods that update model data.
 The controller (which handles user events and the passage of time) will call these actions directly or indirectly.
 
 [horizontal]
