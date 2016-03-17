@@ -29,7 +29,7 @@ February 26:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 5:
 March 1:: GUI stuff
 March 3:: More GUI and project stuff
 March 4:: Lab 6: Project brainstorming
-March 15:: Model View Controller
+March 15:: https://gitlab.com/lawrancej/COMP1000/blob/master/Lectures.adoc[Model View Controller]
 March 17:: More GUI
 
 == Rubric
