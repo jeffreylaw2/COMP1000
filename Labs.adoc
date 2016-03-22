@@ -71,3 +71,84 @@ For example, in the string `hello world`, characters `w`, `h`, `e`, `r`, `d` eac
 
 `boolean isAnagram(String thing1, String thing2)`:: Using `letterHistogram`, determine if two Strings are http://wordsmith.org/anagram/[anagrams of each other]. Examples:
  `dormitory` is an anagram of `dirty room`; `mars` is an anagram of `rams`).
+
+== Lab 4: Interest and Guessing game
+
+https://a8d9f8ba-a-62cb3a1a-s-sites.googlegroups.com/site/witcomp1000fall2015/files/pa4.pdf?attachauth=ANoY7cpGQlD06LLu9ZY8V0AD7bZPjEbpE4RECmBXQdKTiDlRsT_P6WRT88Z3XropvdUmMoe9EIhAWy3JNKHCTSvDMzUuoRX1rUXdoEWK4SVhqgUsg0krMXixYMfCdvsXfEE272itnDVZqlgu-vM7yc6HFmoBaKw9njHl-dTsOGc3EH6NrpHzvU8IXlOcQB886ahgnPOGm3842MEdGcmpG-yHEu6V7bXBi4rMW3JuHRcnM0TeO3xHg94%3D&attredirects=0[Programming assignment 4]
+
+== Lab 5: Group project setup
+
+=== Speed dating
+
+Goal: find a partner or partners.
+
+Ideally, work in pairs.
+Working on this individually is *very* challenging and not recommended.
+Groups of 3 are okay, but larger groups are not recommended.
+
+=== Repository setup
+
+Goal: Set up your repository for the group project.
+
+----
+curl https://gitlab.com/lawrancej/COMP1000Project/raw/master/main.sh | bash
+----
+
+. Add each of your friend(s) as collaborators to your Gitlab repository.
+. Add your friend(s) SSH urls to git.
+
+----
+cd ~/COMP1000Project
+./main.sh
+# Copy instructions from Local setup to command line
+./gradlew eclipse
+----
+
+=== Project
+
+Design and write a graphical program using Eclipse.
+The program must be graphical and interactive (i.e., it must respond to events such as mouse clicks and key presses).
+It is okay if the program is based an existing example program (indeed, studying example programs is a good way to learn).
+However, if you base your program on an example, you must extend it in some nontrivial way, because passing off someone else’s work as your own is plagiarism.
+
+Ideally, work in pairs on this program.
+I do not recommend working on this project individually, as it may be overwhelming.
+Groups of 3 are okay, but larger groups are not allowed (no exceptions).
+
+Keep in mind that we have until the end of the semester, so budget your time accordingly.
+To begin, brainstorm program ideas with your group.
+Decide quickly on a project idea of mutual interest to your group, and commit to it (changing ideas halfway through is a recipe for disaster).
+Re-implementing a well-known game, utility or application (with some reference implementation) is preferable to implementing something completely original, because the difficult design work is already done for you.
+That said, I’d rather see each group will work on different projects than several groups working on similar projects.
+
+At the end of the semester, your group must demonstrate the program to the class.
+I expect everyone to explain how they contributed to their program.
+If the program is based on an example, your group must show how it differs from the original example during the demonstration.
+
+== Lab 6: Project brainstorming / proposal
+
+Example project ideas (from past classes):
+
+* Asteroids
+* Breakout (like pong, but a little more complex)
+* Blackjack
+* Checkers
+* Connect 4
+* Hangman
+* Minesweeper
+* Pacman
+* Paint
+* Racing game
+* Rhyming dictionary
+* Sliding tile puzzle
+* Solitaire
+* Tetris
+* Tower defense
+
+I will live code and explain the snake game.
+
+If you start from some code found online, you must commit that as your initial commit
+and document it. You will be required to improve it substantially.
+
+Submit a brief proposal (just long enough so I have an idea of what you're trying to achieve).
+My email is: lawrancej@wit.edu

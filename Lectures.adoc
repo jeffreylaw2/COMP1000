@@ -57,3 +57,56 @@ Look, but don't touch (for now), unless you want a merge conflict.
 Packages allow us to organize code into groups of related things.
 
 Arrays/Loops
+
+== March 15
+
+Model, View, and Controller (MVC) is a way to structure games or applications.
+The model represents the state of the application and how it changes.
+The view renders the model to the screen.
+The controller translates keystrokes, mouse clicks, and the passage of time into model actions.
+
+=== Model
+
+The model represents the state of the application and how it changes over time.
+
+Ask these questions:
+
+. What information do I need to represent the state of my game or application? These comprise the model data.
+. What are the actions or commands that can occur to update the state of the game or application? These comprise the model actions.
+. What other methods do I need to query the state of the game or application? These comprise the model queries.
+
+=== View
+
+The view draws the model on the screen.
+
+=== Controller
+
+The controller translates keystrokes, mouse clicks, and the passage of time into model actions.
+
+=== Example: Snake game
+
+Model data includes all data necessary to represent game state.
+
+[horizontal]
+snake:: an array of coordinates (a pair of integers)
+food:: a coordinate (a pair of integers)
+direction:: up, down, left, right, or none
+arena:: the rectangle (represented as a coordinate) in which the snake can move.
+
+Model actions are any methods that update model data.
+The controller (which handles user events and the passage of time) will call these actions directly or indirectly.
+
+[horizontal]
+move:: update snake based on direction and if the snake collides with something.
+turn:: change direction
+resize:: change arena size
+grow:: the snake elongates when exposed to food
+eat:: if the snake collided with food, move the food
+die:: if the snake collided with itself or the arena, the snake stops.
+
+Model queries are any useful methods that do not change state.
+
+[horizontal]
+collidesWithArena:: did the snake head bump into the wall?
+collidesWithSelf:: did the snake head collide with the rest of the snake?
+collidesWithFood:: did the snake head collide with the food?

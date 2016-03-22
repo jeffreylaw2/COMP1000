@@ -1,10 +1,13 @@
 = COMP1000
 
+NOTE: Midterm is coming on February 12.
+
 == Resources
 
 * https://gitlab.com/lawrancej/COMP1000/blob/master/Git.adoc[How to submit work, confirm submissions, and receive updates]
 * https://sites.google.com/site/witcomp1000fall2015/lectures[CS1 Slides]
 * http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html[Java JDK 8]
+* https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html[Java API documentation]
 * https://eclipse.org/downloads/[Eclipse downloads]
 
 == Agenda
@@ -21,6 +24,13 @@ January 22:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 2: 
 January 26:: JUnit testing
 January 28:: Classes, objects
 January 29:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 3: Letter count / anagram checker]
+February 19:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 4: Calculate interest / Guessing game]
+February 26:: https://gitlab.com/lawrancej/COMP1000/blob/master/Labs.adoc[Lab 5: Group project setup]
+March 1:: GUI stuff
+March 3:: More GUI and project stuff
+March 4:: Lab 6: Project brainstorming
+March 15:: https://gitlab.com/lawrancej/COMP1000/blob/master/Lectures.adoc[Model View Controller]
+March 17:: More GUI
 
 == Rubric
 
